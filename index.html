@@ -668,5 +668,25 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     lightbox.addEventListener('click', function (e) { if (e.target === lightbox) closeLightbox(); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLightbox(); });
   </script>
+
+  <!-- ===================================================================
+       LAYLO SIGN-UP POPUP
+       - Opens 5 seconds after the page loads; fans sign up by text or email
+       - The wording, button and colour are set here, not in Laylo
+       =================================================================== -->
+  <script src="https://embed.laylo.com/laylo-sdk.js"></script>
+  <script>
+    laylo.openPopup({
+      id: 'qRlCU',
+      minimal: false,
+      customCTA: "Hear new FLOTE music first",
+      submitButtonText: "RSVP",
+      color: 'A57BD9',
+      theme: 'light',
+      background: '',
+      fullWidth: false,
+      secondsToWait: 5
+    });
+  </script>
 </body>
 </html>
